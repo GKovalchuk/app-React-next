@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Htag, P, Rating, Tag } from '../components';
+import { withLayout } from '../layout/Layout';
 
-export default function Home(): JSX.Element {
+function Home(): JSX.Element {
 	type numberOrNull = number | null;
 	const [counter, setCounter] = useState<number>(0);
 	const arr: Array<numberOrNull> = [];
@@ -11,7 +12,6 @@ export default function Home(): JSX.Element {
 	});
 
 	const [rating, setRating] = useState<number>(4);
-
 
 	return (
 		<>
@@ -29,3 +29,5 @@ export default function Home(): JSX.Element {
 		</>
 	);
 }
+
+export default withLayout(Home);
