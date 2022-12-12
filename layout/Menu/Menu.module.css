@@ -24,7 +24,16 @@
 .secondBlock {
 	margin: 15px 0 0 12px;
 	padding-left: 32px;
+	padding-bottom: 5px;
 	border-left: 1px solid var(--grey-dark);
+}
+
+.secondLevelBlock {
+	display: none;
+}
+
+.secondLevelBlockOpened {
+	display: block;
 }
 
 .secondLevel {
