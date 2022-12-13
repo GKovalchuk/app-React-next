@@ -29,6 +29,7 @@ a {
 
 :root {
 	--black: #3B434E;
+	--grey: #A4A4A4;
 	--grey-light: #EBEBEB;
 	--grey-dark: #787D85;
 	--white: white;
@@ -37,6 +38,6 @@ a {
 	--red: #FC836D;
 	--green: #1DC37E;
 	--green-light: #C8F8E4;
-	--background: #E5E5E5;
+	--background: #F5F6F8;
 	--font-family: "Noto Sans", sans-serif;
 }
