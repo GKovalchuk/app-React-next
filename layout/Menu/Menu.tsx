@@ -33,7 +33,6 @@ export const Menu = (): JSX.Element => {
 								{menu.icon}
 								<span>{menu.name}</span>
 							</div>
-
 						</Link>
 						{menu.id == firstCategory && buildSecondLevel(menu)}
 					</div>
