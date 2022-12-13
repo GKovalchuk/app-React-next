@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-columns: auto 230px minmax(320px, 1200px) auto;
 	grid-template-rows: auto 1fr auto;
-	gap: 0 30px;
+	gap: 40px 30px;
 	min-height: 100vh;
 	grid-template-areas:
 		". header header ."
@@ -12,18 +12,15 @@
 
 .header {
 	grid-area: header;
-	background: green;
 	display: none;
 }
 
 .sidebar {
 	grid-area: sidebar;
-	background: yellow;
 }
 
 .body {
 	grid-area: body;
-	background: rgb(160, 255, 149);
 }
 
 .footer {
@@ -46,5 +43,9 @@
 
 	.header {
 		display: block;
+	}
+
+	.body {
+		padding: 15px;
 	}
 }
