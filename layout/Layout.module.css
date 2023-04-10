@@ -27,6 +27,23 @@
 	grid-area: footer;
 }
 
+@media (max-width: 1689px) {
+
+	.wrapper {
+		grid-template-columns: 230px minmax(320px, 1200px);
+		grid-template-rows: auto 1fr auto;
+		gap: 40px 30px;
+		min-height: 100vh;
+		grid-template-areas:
+			"header header"
+			"sidebar body"
+			"footer footer";
+
+		margin: 50px;
+	}
+
+}
+
 @media (max-width: 765px) {
 
 	.wrapper {
@@ -35,6 +52,7 @@
 			"header"
 			"body"
 			"footer";
+		margin: auto;
 	}
 
 	.sidebar {
@@ -48,4 +66,5 @@
 	.body {
 		padding: 15px;
 	}
+
 }
