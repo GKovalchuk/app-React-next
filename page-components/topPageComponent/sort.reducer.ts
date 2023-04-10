@@ -1,4 +1,3 @@
-import { A } from '../../components/A/A';
 import { SortEnum } from '../../components/Sort/Sort.props';
 import { ProductModel } from '../../interfaces/product.interface';
 

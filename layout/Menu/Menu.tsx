@@ -7,7 +7,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { firstLevelMenu } from '../../helpers/helpers';
 
-
 export const Menu = (): JSX.Element => {
 	const { menu, setMenu, firstCategory } = useContext(AppContext);
 	const router = useRouter();
@@ -23,18 +22,17 @@ export const Menu = (): JSX.Element => {
 	const buildFirstLevel = () => {
 		return (
 			<>
-				{firstLevelMenu.map(menu => (
-					<div key={menu.route}>
-						<Link href={`/${menu.route}`}>
-
+				{firstLevelMenu.map(m => (
+					<div key={m.route}>
+						<Link href={`/${m.route}`}>
 							<div className={cn(styles.firstLevel, {
-								[styles.firstLevelActive]: menu.id == firstCategory
+								[styles.firstLevelActive]: m.id == firstCategory
 							})}>
-								{menu.icon}
-								<span>{menu.name}</span>
+								{m.icon}
+								<span>{m.name}</span>
 							</div>
 						</Link>
-						{menu.id == firstCategory && buildSecondLevel(menu)}
+						{m.id == firstCategory && buildSecondLevel(m)}
 					</div>
 				))}
 			</>
@@ -68,7 +66,7 @@ export const Menu = (): JSX.Element => {
 	const buildThirdLevel = (pages: PageItem[], route: string) => {
 		return (
 			pages.map(p => (
-				<Link href={`/${route}/${p.alias}`} className={cn(styles.thirdLevel, {
+				<Link key={p._id} href={`/${route}/${p.alias}`} className={cn(styles.thirdLevel, {
 					[styles.thirdLevelActive]: `/${route}/${p.alias}` == router.asPath
 				})}>
 					{p.category}
