@@ -2,8 +2,8 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	background: var(--background);
-	color: var(--black);
+	background: var(--background-html);
+	color: var(--font-color);
 	font-family: var(--font-family);
 }
 
@@ -16,17 +16,6 @@ a {
 	box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-	html {
-		color-scheme: dark;
-	}
-
-	body {
-		background: black;
-		color: white;
-	}
-}
-
 :root {
 	--black: #3B434E;
 	--grey: #A4A4A4;
@@ -36,8 +25,29 @@ a {
 	--primary: #7653FC;
 	--primary-hover: #5d3ae9;
 	--red: #FC836D;
+	--red-light: #f9b6aa;
 	--green: #1DC37E;
 	--green-light: #C8F8E4;
 	--background: #F5F6F8;
+	--background-html: #e5e5e5;
+	--background-card: #fff;
+	--background-card__blue: #F9F8FF;
 	--font-family: "Noto Sans", sans-serif;
+	--font-color__nodark: #3B434E;
+	--font-color: #3B434E;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: dark;
+	}
+
+	:root {
+		--background: #2c2e31;
+		--grey-dark: #d9d9d9;
+		--background-html: #191c20;
+		--background-card: #3B434E;
+		--background-card__blue: #343f4f;
+		--font-color: #e1e1e1;
+	}
 }

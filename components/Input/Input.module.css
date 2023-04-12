@@ -7,10 +7,25 @@
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
 	border-radius: 5px;
 	font-size: 16px;
-	font-weight: 22px;
+	line-height: 22px;
 	font-family: var(--font-family);
+}
+
+.error {
+	border: 1px solid var(--red);
 }
 
 .input::placeholder {
 	color: var(--grey);
+}
+
+.inputWrapper {
+	position: relative;
+}
+
+.errorMessage {
+	position: absolute;
+	bottom: -22px;
+	left: 10px;
+	color: var(--red);
 }

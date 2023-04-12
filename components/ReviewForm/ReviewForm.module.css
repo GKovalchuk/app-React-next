@@ -4,7 +4,7 @@
 
 	display: grid;
 	grid-template-columns: [start] auto 1fr auto [end];
-	gap: 20px 30px;
+	gap: 28px 30px;
 
 	align-items: center;
 }
@@ -28,12 +28,26 @@
 	gap: 20px;
 }
 
-.success {
+.panel {
 	position: relative;
+	margin-top: 20px;
 	padding: 20px;
+	color: var(--font-color__nodark);
 
 	background: var(--green-light);
 	border-radius: 5px;
+}
+
+.success {
+	color: var(--font-color__nodark);
+}
+
+.error {
+	background: var(--red-light);
+}
+
+.error .closeIcon path {
+	stroke: var(--red);
 }
 
 .successTitle {
@@ -61,7 +75,7 @@
 	}
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 640px) {
 	.reviewForm {
 		grid-template-columns: [start] 1fr [end];
 	}

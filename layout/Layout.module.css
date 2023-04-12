@@ -1,6 +1,6 @@
 .wrapper {
 	display: grid;
-	grid-template-columns: auto 230px minmax(320px, 1200px) auto;
+	grid-template-columns: minmax(20px, auto) 230px minmax(320px, 1200px) minmax(20px, auto);
 	grid-template-rows: auto 1fr auto;
 	gap: 40px 30px;
 	min-height: 100vh;
@@ -8,6 +8,7 @@
 		". header header ."
 		". sidebar body ."
 		"footer footer footer footer";
+	background-color: var(--background);
 }
 
 .header {
@@ -30,21 +31,15 @@
 @media (max-width: 1689px) {
 
 	.wrapper {
-		grid-template-columns: 230px minmax(320px, 1200px);
+		grid-template-columns: 20px 230px minmax(320px, 1200px) 20px;
 		grid-template-rows: auto 1fr auto;
 		gap: 40px 30px;
 		min-height: 100vh;
-		grid-template-areas:
-			"header header"
-			"sidebar body"
-			"footer footer";
-
-		margin: 50px;
 	}
 
 }
 
-@media (max-width: 765px) {
+@media (max-width: 879px) {
 
 	.wrapper {
 		grid-template-columns: minmax(320px, 1fr);
@@ -66,5 +61,4 @@
 	.body {
 		padding: 15px;
 	}
-
 }
