@@ -140,20 +140,10 @@
 	margin-bottom: 5px;
 }
 
-.closed {
-	overflow: hidden;
-	max-height: 0;
-	height: 0;
-}
-
-.opened {
-	overflow: hidden;
-	max-height: auto;
-	padding: 30px;
-}
-
 .reviews {
 	margin-top: 5px;
+	overflow: hidden;
+	padding: 30px;
 }
 
 @media screen and (max-width: 1320px) {
