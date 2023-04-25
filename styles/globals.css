@@ -17,17 +17,24 @@ a {
 	box-sizing: border-box;
 }
 
+.visuallyHidden {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
 :root {
 	--black: #3B434E;
 	--grey: #A4A4A4;
 	--grey-light: #EBEBEB;
-	--grey-dark: #787D85;
+	--grey-dark: #6c7077;
 	--white: white;
-	--primary: #7653FC;
+	--primary: #7351f5;
 	--primary-hover: #5d3ae9;
 	--red: #FC836D;
 	--red-light: #f9b6aa;
-	--green: #1DC37E;
+	--green: #007b48;
 	--green-light: #C8F8E4;
 	--background: #F5F6F8;
 	--background-html: #e5e5e5;
