@@ -18,27 +18,27 @@ a {
 }
 
 .visuallyHidden {
+	position: absolute;
 	width: 0;
 	height: 0;
 	overflow: hidden;
-	position: absolute;
 }
 
 :root {
 	--black: #3B434E;
 	--grey: #A4A4A4;
 	--grey-light: #EBEBEB;
-	--grey-dark: #6c7077;
+	--grey-dark: #6C7077;
 	--white: white;
-	--primary: #7351f5;
-	--primary-hover: #5d3ae9;
+	--primary: #7351F5;
+	--primary-hover: #5D3AE9;
 	--red: #FC836D;
-	--red-light: #f9b6aa;
-	--green: #007b48;
+	--red-light: #F9B6AA;
+	--green: #007B48;
 	--green-light: #C8F8E4;
 	--background: #F5F6F8;
-	--background-html: #e5e5e5;
-	--background-card: #fff;
+	--background-html: #E5E5E5;
+	--background-card: #FFF;
 	--background-card__blue: #F9F8FF;
 	--font-family: "Noto Sans", sans-serif;
 	--font-color__nodark: #3B434E;
@@ -51,11 +51,11 @@ a {
 	}
 
 	:root {
-		--background: #2c2e31;
-		--grey-dark: #d9d9d9;
-		--background-html: #191c20;
+		--background: #2C2E31;
+		--grey-dark: #D9D9D9;
+		--background-html: #191C20;
 		--background-card: #3B434E;
-		--background-card__blue: #343f4f;
-		--font-color: #e1e1e1;
+		--background-card__blue: #343F4F;
+		--font-color: #E1E1E1;
 	}
 }

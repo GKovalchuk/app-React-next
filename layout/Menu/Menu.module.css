@@ -1,17 +1,17 @@
 .firstLevel {
 	display: grid;
 	grid-template-columns: 24px 1fr;
-	gap: 20px;
 	align-items: center;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 25px;
 	margin-top: 20px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 25px;
+	gap: 20px;
 }
 
 .firstLevelList {
-	list-style: none;
 	padding: 0;
+	list-style: none;
 }
 
 .firstLevelActive,
@@ -32,23 +32,23 @@
 }
 
 .secondLevelBlock {
-	overflow: hidden;
-	white-space: nowrap;
-	list-style: none;
 	padding: 0;
+	overflow: hidden;
+	list-style: none;
+	white-space: nowrap;
 }
 
 .secondLevel {
 	margin-bottom: 10px;
-	cursor: pointer;
-	text-transform: uppercase;
-	color: var(--grey-dark);
-	font-weight: 300;
-	font-size: 12px;
+	padding: 0;
+	border: none;
 	outline-offset: -1px;
 	background: none;
-	border: none;
-	padding: 0;
+	color: var(--grey-dark);
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .secondLevel:hover {
@@ -56,21 +56,18 @@
 }
 
 .thirdLevel {
-	max-width: 260px;
-
 	display: block;
+	max-width: 260px;
 	margin-bottom: 10px;
-
-	cursor: pointer;
-	text-transform: uppercase;
-	color: var(--grey-dark);
-	font-weight: 500;
-	font-size: 14px;
-	outline-offset: -1px;
-
 	overflow: hidden;
-	white-space: nowrap;
+	outline-offset: -1px;
+	color: var(--grey-dark);
+	font-size: 14px;
+	font-weight: 500;
 	text-overflow: ellipsis;
+	text-transform: uppercase;
+	white-space: nowrap;
+	cursor: pointer;
 }
 
 .thirdLevelActive,

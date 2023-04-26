@@ -10,6 +10,10 @@
 		"indentation": [
 			"tab"
 		],
+		"declaration-block-no-redundant-longhand-properties": null,
+		"max-line-length": null,
+		"selector-class-pattern": null,
+		"custom-property-pattern": null,
 		"color-hex-case": "upper"
 	}
 }

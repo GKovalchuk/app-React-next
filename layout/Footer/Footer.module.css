@@ -1,18 +1,14 @@
 .footer {
-	height: 72px;
-	align-content: center;
-	padding: 15px 0;
-
 	display: grid;
-	grid-template-columns: 0px max-content auto max-content max-content 0px;
-	grid-template-areas:
-		". copyright . agreement policy .";
-	gap: 10px 40px;
-
+	grid-template-areas: ". copyright . agreement policy .";
+	grid-template-columns: 0 max-content auto max-content max-content 0;
+	align-content: center;
+	height: 72px;
+	padding: 15px 0;
 	background: var(--primary);
-
 	color: var(--white);
 	text-align: center;
+	gap: 10px 40px;
 }
 
 .copyright {
@@ -29,21 +25,20 @@
 
 @media (max-width: 996px) {
 	.footer {
+		grid-template-areas: "copyright agreement policy";
 		grid-template-columns: max-content max-content max-content;
-		gap: 0 10px;
-		grid-template-areas:
-			"copyright agreement policy";
 		justify-content: space-around;
+		gap: 0 10px;
 	}
 }
 
 @media (max-width: 879px) {
 	.footer {
-		grid-template-columns: 1fr;
 		grid-template-areas:
 			"copyright"
 			"agreement"
 			"policy";
+		grid-template-columns: 1fr;
 		padding: 20px 0;
 	}
 }

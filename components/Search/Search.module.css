@@ -1,19 +1,19 @@
 .search {
-	position: relative;
 	display: block;
+	position: relative;
 	width: 90%;
 }
 
-.inputSearch>input {
-	width: 100%;
+.inputSearch > input {
 	display: block;
+	width: 100%;
 }
 
 .button {
 	position: absolute;
+	z-index: 1;
 	top: 3px;
 	right: 3px;
-	z-index: 1;
 	width: 30px;
 	height: 30px;
 	padding: 7px;

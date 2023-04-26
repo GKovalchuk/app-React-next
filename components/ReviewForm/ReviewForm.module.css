@@ -1,12 +1,10 @@
 .reviewForm {
-	font-size: 14px;
-	line-height: 24px;
-
 	display: grid;
 	grid-template-columns: [start] auto 1fr auto [end];
-	gap: 28px 30px;
-
 	align-items: center;
+	font-size: 14px;
+	line-height: 24px;
+	gap: 28px 30px;
 }
 
 .description,
@@ -32,10 +30,9 @@
 	position: relative;
 	margin-top: 20px;
 	padding: 20px;
-	color: var(--font-color__nodark);
-
-	background: var(--green-light);
 	border-radius: 5px;
+	background: var(--green-light);
+	color: var(--font-color__nodark);
 }
 
 .success {

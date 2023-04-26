@@ -16,20 +16,20 @@
 
 .error svg {
 	stroke: var(--red);
-	fill: var(--red);
 	opacity: 0.6;
+	fill: var(--red);
 }
 
 .errorMessage {
 	position: absolute;
 	bottom: -22px;
-	left: 0px;
+	left: 0;
 	color: var(--red);
 }
 
 .filled svg {
-	fill: var(--primary);
+	outline: none;
 	stroke: none;
 	opacity: 1;
-	outline: none;
+	fill: var(--primary);
 }
