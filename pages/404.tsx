@@ -3,9 +3,9 @@ import { withLayout } from '../layout/Layout';
 
 export function Error404(): JSX.Element {
 	return (
-		<>
-			<Htag tag={'h1'}>Кажется, такой страницы не существует</Htag>
-		</>
+		<Htag tag={'h1'}>
+			Кажется, такой страницы не существует
+		</Htag>
 	);
 }
 
