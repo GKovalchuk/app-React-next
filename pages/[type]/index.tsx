@@ -7,10 +7,11 @@ import { ParsedUrlQuery } from 'querystring';
 import { API } from '../../helpers/api';
 
 
-function Type({ firstCategory }: TypeProps): JSX.Element {
+function Type(): JSX.Element {
 	return (
 		<>
-			Type: {firstCategory}
+			Эта страница разрабатываться не будет.
+			Выберите в меню "Курсы" категорию, которая Вас интересует
 		</>
 	);
 }
