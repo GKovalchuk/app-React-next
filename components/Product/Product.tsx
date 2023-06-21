@@ -118,7 +118,7 @@ export const Product = motion(forwardRef(({ product, className, ...props }: Prod
 				variants={variants}
 				initial='hidden'
 			>
-				<Card
+				{isReviewOpened && <Card
 					color='blue'
 					className={cn(styles.reviews)}
 					ref={reviewRef}
@@ -131,9 +131,8 @@ export const Product = motion(forwardRef(({ product, className, ...props }: Prod
 						</div>
 					))}
 					<ReviewForm productId={product._id} isOpened={isReviewOpened} />
-				</Card>
+				</Card>}
 			</motion.div>
 		</div>
-
 	);
 }));
