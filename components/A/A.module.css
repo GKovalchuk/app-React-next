@@ -22,3 +22,14 @@
 	font-size: 18px;
 	line-height: 29px;
 }
+
+.LWithMargin {
+	margin-top: 10px;
+	font-size: 18px;
+	line-height: 29px;
+	text-decoration: underline;
+}
+
+.LWithMargin:hover {
+	color: var(--primary);
+}

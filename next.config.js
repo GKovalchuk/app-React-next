@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
 };
 
+// eslint-disable-next-line no-undef
 module.exports = {
 	images: {
 		domains: ['courses-top.ru']

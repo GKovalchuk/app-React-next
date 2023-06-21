@@ -8,8 +8,9 @@ export const P = ({ size = 'M', children, className, ...props }: PProps): JSX.El
 			className={cn(styles.p, className, {
 				[styles.S]: size == 'S',
 				[styles.M]: size == 'M',
+				[styles.MWithMargin]: size == 'MWithMargin',
 				[styles.L]: size == 'L',
-
+				[styles.LWithMargin]: size == 'LWithMargin'
 			})}
 			{...props}
 		>

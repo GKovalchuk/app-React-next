@@ -1,11 +1,52 @@
 import { GetStaticProps } from 'next';
-import { Htag } from '../components';
+import { Htag, P } from '../components';
 import { withLayout } from '../layout/Layout';
 import axios from 'axios';
 import { MenuItem } from '../interfaces/menu.interface';
 import { API } from '../helpers/api';
+import Link from 'next/link';
+import { A } from '../components/A/A';
 function Home(): JSX.Element {
-	return <Htag tag='h1'>Заголовок</Htag>;
+	return (
+		<>
+			<Htag tag='h1'>
+				Приложение на TypeScript + Next.JS.
+			</Htag>
+			<Htag tag='h2'>Использованные библиотеки:</Htag>
+			<ul>
+				<li>axios</li>
+				<li>classnames</li>
+				<li>date-fns</li>
+				<li>framer-motion</li>
+				<li>react-hook-form</li>
+			</ul>
+			<Htag tag='h3'>
+				В проекте работает меню "Курсы".
+			</Htag>
+			<P size={'MWithMargin'}>
+				Для остальных страниц Json не приходит. Выберите категорию в меню "Курсы".
+			</P>
+			<P size={'LWithMargin'}>
+				Ознакомится с подробностями можно&nbsp;
+				<A size={'LWithMargin'} href={'https://github.com/GKovalchuk/app-React-next'}>
+					на моем GitHub
+				</A>
+			</P>
+			<P size={'LWithMargin'} >
+				Docker контейнер&nbsp;
+				<A size={'LWithMargin'} href={'https://github.com/GKovalchuk/app-React-next/pkgs/container/app-react-next%2Ftop-app-demo'}>
+					GitHub Packages
+				</A>
+			</P>
+			<P size={'LWithMargin'} >
+				Установка через командную строку:
+			</P>
+			<P size={'MWithMargin'} >
+				docker pull ghcr.io/gkovalchuk/app-react-next/top-app-demo:develop
+			</P >
+
+		</>
+	);
 }
 
 export default withLayout(Home);
