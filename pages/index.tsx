@@ -20,12 +20,9 @@ function Home(): JSX.Element {
 				<li>framer-motion</li>
 				<li>react-hook-form</li>
 			</ul>
-			<Htag tag='h3'>
-				В проекте работает меню "Курсы".
+			<Htag tag='h2'>
+				В проекте работает меню "Курсы". Выберите категорию в меню "Курсы".
 			</Htag>
-			<P size={'MWithMargin'}>
-				Для остальных страниц Json не приходит. Выберите категорию в меню "Курсы".
-			</P>
 			<P size={'LWithMargin'}>
 				Ознакомится с подробностями можно&nbsp;
 				<A size={'LWithMargin'} href={'https://github.com/GKovalchuk/app-React-next'}>
@@ -41,8 +38,8 @@ function Home(): JSX.Element {
 			<P size={'LWithMargin'} >
 				Установка через командную строку:
 			</P>
-			<P size={'MWithMargin'} >
-				docker pull ghcr.io/gkovalchuk/app-react-next/top-app-demo:develop
+			<P size={'LWithMargin'} >
+				% docker pull ghcr.io/gkovalchuk/app-react-next/top-app-demo:develop
 			</P >
 
 		</>
